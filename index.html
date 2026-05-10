@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIRECTORS SOCIETY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="brand-logo">DIRECTORS <span> SOCIETY</span></div>
+
+  <nav class="floating-nav" id="nav">
+  <a href="#home" class="nav-item active">
+    <span class="nav-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M4 12L12 4L10 12L18 20H12L14 12H4Z" fill="currentColor"></path>
+      </svg>
+    </span>
+    <span>HOME</span>
+  </a>
+  <a href="#MOVIES" class="nav-item">
+    <span class="nav-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 3L3 8V16L12 21L21 16V8L12 3Z" fill="currentColor"></path>
+        <path d="M3 8L12 13L21 8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
+        <path d="M12 13V21" stroke="currentColor" stroke-width="1.6"></path>
+      </svg>
+    </span>
+    <span>MOVIES</span>
+  </a>
+  <a href="#MYLIST" class="nav-item">
+    <span class="nav-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L4 5V11C4 16 7.4 20.4 12 22C16.6 20.4 20 16 20 11V5L12 2Z" fill="currentColor"></path>
+      </svg>
+    </span>
+    <span>MYLIST</span>
+  </a>
+</nav>
+    <section class="hero" id="hero">
+      <video class="hero-bg" autoplay muted loop playsinline>
+  <source src="assets/Best.mp4" type="video/mp4">
+</video>
+      <button class="hero-volume-btn" id="volumeBtn" title="Unmute">🔇</button>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-box">
+        <div class="hero-badges">
+          <span class="badge badge-genre">CRIME / DRAMA</span>
+          <span class="badge badge-rating">⭐ 9.4</span>
+        </div>
+
+        <h1 class="hero-title">THE<br>GODFATHER🎴</h1>
+        <p class="hero-desc">
+          <i><b>THE GREATEST FILM EVER MADE IN CINEMA</b></i>
+          <br><br>
+          I'M GONNA MAKE HIM AN OFFER HE CAN'T REFUSE !
+          <br>
+          IT'S NOT PERSONAL SONNY, IT'S STRICTLY BUSINESS !
+        </p>
+        <div class="hero-btns">
+          <button id="playBtn" class="btn-play" onclick="window.open('https://youtu.be/fVVLR2u1nSk?si=xJrwR_Rpijy8pKJ1','_blank')">▶ PLAY</button>
+          <button class="btn-info">INFO</button>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+  <div class="browse-video-wrapper">
+    <video class="browse-bg-video" autoplay muted loop playsinline>
+      <source src="assets/Best2.mp4" type="video/mp4">
+    </video>
+    <div class="browse-video-overlay"></div>
+    <main class="browse">
+      <section class="row-section" id="services">
+        <div class="row-head">
+          <h2>🎬 MOVIES</h2>
+          <a href="#" class="see-all">MOVIES→</a>
+        </div>
+        <div class="row-wrap">
+          <button class="row-arrow left" data-row="movies">‹</button>
+          <div class="cards-row" id="row-movies">
+            <div class="card" onclick="window.open('https://youtu.be/XLPXI8KUztg?si=mK58q3bbPNU4FFEb','_blank')">
+              <div class="thumb">
+                <img src="assets/The Shawshank Redemption.jpeg" alt="The Shawshank Redemption" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">The Shawshank Redemption</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.2</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/7zBBWAlpShY?si=hajsbZwkt8UXprhP','_blank')">
+              <div class="thumb">
+                <img src="assets/Harry Potter.jpg" alt="Harry Potter" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Harry Potter</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.1</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=EXeTwQWrcwY','_blank')">
+              <div class="thumb">
+                <img src="assets/The Dark Knight.jpg" alt="The Dark Knight" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">The Dark Knight</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.1</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=naQr0uTrH_s','_blank')">
+              <div class="thumb">
+                <img src="assets/pirates of the caribbean.jpg" alt="Pirates of the Caribbean" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Pirates of the Caribbean</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.0</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/cv276Wg3e7I?si=lLCo7IxQTlzS4qgn','_blank')">
+              <div class="thumb">
+                <img src="assets/Scarface.jpg" alt="Scarface" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Scarface</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.0</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=s7EdQ4FqbhY','_blank')">
+              <div class="thumb">
+                <img src="assets/Pulp Fiction.jpg" alt="Pulp Fiction" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Pulp Fiction</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.8</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/b15-P12gIf0?si=ipefMazh0wzMvCVd','_blank')">
+              <div class="thumb">
+                <img src="assets/James Bond.jpg" alt="James Bond" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">James Bond</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.8</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=qtRKdVHc-cE','_blank')">
+              <div class="thumb">
+                <img src="assets/Fight Club.jpg" alt="Fight Club" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Fight Club</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.8</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=JNwNXF9Y6kY','_blank')">
+              <div class="thumb">
+                <img src="assets/Star Wars.jpg" alt="Star Wars" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Star Wars: Empire Strikes Back</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.7</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=vKQi3bBA1y8','_blank')">
+              <div class="thumb">
+                <img src="assets/The Matrix.jpg" alt="The Matrix" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">The Matrix</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.8</span></div>
+              </div>
+            </div>
+          </div>
+          <button class="row-arrow right" data-row="movies">›</button>
+        </div>
+      </section>
+
+      <section class="row-section">
+        <div class="row-head">
+          <h2>SERIES🃏</h2>
+          <a href="#" class="see-all"> →</a>
+        </div>
+        <div class="row-wrap">
+          <button class="row-arrow left" data-row="series">‹</button>
+          <div class="cards-row" id="row-series">
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=HhesaQXLuRY','_blank')">
+              <div class="thumb">
+                <img src="assets/Breaking Bad.jpg" alt="Breaking Bad" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Breaking Bad</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.5</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=bjqEWgDVPe0','_blank')">
+              <div class="thumb">
+                <img src="assets/Game Of Thrones.jpg" alt="Game Of Thrones" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Game Of Thrones</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.3</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/9GgxinPwAGc?si=k0_OQhofA40dSXk4','_blank')">
+              <div class="thumb">
+                <img src="assets/The Vikings.jpg" alt="The Vikings" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">The Vikings</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.5</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/gO8N3L_aERg?si=c_T3F0r4qBl3xYtq','_blank')">
+              <div class="thumb">
+                <img src="assets/The Office.jpg" alt="The Office (US)" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">The Office (US)</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.9</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/cc-Vx6x3_g0?si=rP6wDIFeP2s5swm3','_blank')">
+              <div class="thumb">
+                <img src="assets/Ertuğrul.jpg" alt="Diriliş: Ertuğrul" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Diriliş: Ertuğrul</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.0</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/rrmUk2YUm14?si=7oDbLCV3CjMc4Sak','_blank')">
+              <div class="thumb">
+                <img src="assets/Batman.jpg" alt="Batman: The Animated Series" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Batman: The Animated Series</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.0</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/eQQGQa3lTGs?si=EVKiq7tpoWIxs7yj','_blank')">
+              <div class="thumb">
+                <img src="assets/The Sopranos.jpg" alt="The Sopranos" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">The Sopranos</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.2</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://www.youtube.com/watch?v=M1bhOaLV4FU','_blank')">
+              <div class="thumb">
+                <img src="assets/The Boys.jpg" alt="The Boys" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">The Boys</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.7</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/c5iVTy-GuJ0?si=hPVcL-aOLDFkKqQo','_blank')">
+              <div class="thumb">
+                <img src="assets/White Collar.jpg" alt="White Collar" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">White Collar</div>
+                <div class="card-meta"><span class="card-rating">⭐ 8.3</span></div>
+              </div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/y9ZouUyPKx8?si=fNjT6o9J7cxI4hMh','_blank')">
+              <div class="thumb">
+                <img src="assets/Sherlock.jpg" alt="Sherlock" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body">
+                <div class="card-title">Sherlock</div>
+                <div class="card-meta"><span class="card-rating">⭐ 9.1</span></div>
+              </div>
+            </div>
+          </div>
+          <button class="row-arrow right" data-row="series">›</button>
+        </div>
+      </section>
+
+      <section class="row-section">
+        <div class="row-head">
+          <h2>💢ANIMES</h2>
+          <a href="#" class="see-all">See all →</a>
+        </div>
+        <div class="row-wrap">
+          <button class="row-arrow left" data-row="anime">‹</button>
+          <div class="cards-row" id="row-anime">
+            <div class="card" onclick="window.open('https://youtu.be/gqIEgmqljM8?si=TmRZ8qEd-J3qWmrp','_blank')">
+              <div class="thumb">
+                <img src="assets/Dragon Ball Z.jpg" alt="Dragon Ball Z" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Dragon Ball Z</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/1KMcoJBMWE4?si=mj2MMijpNCiuolb0','_blank')">
+              <div class="thumb">
+                <img src="assets/One Piece.jpg" alt="One Piece" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">One Piece</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/-G9BqkgZXRA?si=ZRSFUPqJHF1M8KQv','_blank')">
+              <div class="thumb">
+                <img src="assets/Naruto.jpg" alt="Naruto" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Naruto</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/PLyi5xHtkb0?si=Y9Ol7asu1w3dftez','_blank')">
+              <div class="thumb">
+                <img src="assets/Bleach.jpg" alt="Bleach" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Bleach</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/MGRm4IzK1SQ?si=EX5Yxv5jmg95sta0','_blank')">
+              <div class="thumb">
+                <img src="assets/Attack On Titan.jpg" alt="Attack On Titan" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Attack On Titan</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/NlJZ-YgAt-c?si=3x0fXHMDGRQUrpuB','_blank')">
+              <div class="thumb">
+                <img src="assets/DEATH NOTE.jpg" alt="Death Note" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Death Note</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/aybr_9MzKXI?si=7NX0XosPLN_PqIAN','_blank')">
+              <div class="thumb">
+                <img src="assets/Jujutsu kaisen.jpg" alt="Jujutsu Kaisen" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Jujutsu Kaisen</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/f8JrZ7Q_p-8?si=bDtstxRrCkMPyrU3','_blank')">
+              <div class="thumb">
+                <img src="assets/Vinland Saga.jpg" alt="Vinland Saga" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Vinland Saga</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/m3Bsyozf_8I?si=4VxjACiZnWiglRro','_blank')">
+              <div class="thumb">
+                <img src="assets/Monster.jpg" alt="Monster" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Monster</div></div>
+            </div>
+
+            <div class="card" onclick="window.open('https://youtu.be/IXL5r3n862U?si=OWaqsYPMq7lZoU8m','_blank')">
+              <div class="thumb">
+                <img src="assets/Berserk.jpg" alt="Berserk" class="thumb-img" />
+                <div class="thumb-overlay"><div class="play-icon">▶</div></div>
+                <button class="wishlist-btn">♡</button>
+              </div>
+              <div class="card-body"><div class="card-title">Berserk</div></div>
+            </div>
+          </div>
+          <button class="row-arrow right" data-row="anime">›</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <footer id="about">
+    <div class="footer-logo">DIRECTORS <span>SOCIETY</span></div>
+    <div class="footer-links">
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+    <p>©2026 DIRECTORS SOCIETY<br>ALL RIGHTS RESERVED</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
